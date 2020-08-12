@@ -1,3 +1,5 @@
+/* CSS - Cascading Style Sheets */
+
 :root {
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
@@ -18,44 +20,49 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-    /*tamanho da fonte padrão: 16px - 100% - 1rem*/
+    /*Tamanho de fonte padrão: 16px - 100% - 1rem
     font-size: 60%; /* controle das medidas rem */
 }
 
-body,
-input,
-button,
-textarea {
-    font: 500 1.6rem Poppins;/*font-weight: 500; font-family: Poppins; font-size: 1.6rem;*/
-    color: #FFFFFF;
-}
-
-html,
-body {
-    height: 100vh;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-background);
-    font-size: 100%;
-}
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#container {
-   width: 90vw;
-   max-width: 700px;
+html, body{
+    height: 100vh;
 }
 
-@media (min-width: 700px) {
-    :root {
-        font-size: 62.5%;
+body{
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea{
+    font: 500 1.6rem Poppins;
+    /*
+    =
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    */
+    color: var(--color-text-base);
+}
+
+#container{
+    width: 90vw; 
+    max-width: 700;
+}
+
+.hero-image{
+    width: 100%;
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 62.5%; /*Todo 1rem vai ser relativo à 10px*/
     }
 }
