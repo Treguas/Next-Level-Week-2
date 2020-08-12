@@ -3,7 +3,7 @@ const express = require('express')
 const server = express()
 
 const {pageLanding, pageStudy, pageGiveClasses, saveClasses} = require("./pages")
-//Configurar nunjucks (template engine)
+//Configurar nunjucks (template engine npm install nunjucks)
 const nunjucks = require('nunjucks')
 nunjucks.configure('src/views', {
     express: server,
