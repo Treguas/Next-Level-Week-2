@@ -19,8 +19,6 @@
 <!-- Index session-->
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-funcionalidades">Funcionalidades</a> • 
- <a href="#-layout">Layout</a> • 
  <a href="#-preview">Preview</a> • 
  <a href="#-como-executar-o-projeto">Executando</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
