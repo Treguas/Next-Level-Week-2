@@ -20,8 +20,8 @@ function cloneField(){
         field.value = ""
         
     })
-    fields[0].value = ""
-    fields[1].value = ""
+    //fields[0].value = ""
+    //fields[1].value = ""
 
     //Colocar  na página: Onde?
     document.querySelector('#schedule-items').appendChild(newFieldContainer)
