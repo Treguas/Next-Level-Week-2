@@ -1,27 +1,25 @@
-//Servidor
-const express = require('express')
-const server = express()
+// Server config
+const express = require('express');
+const server = express();
+const port = 3000;
 
-const {pageLanding, pageStudy, pageGiveClasses, saveClasses} = require("./pages")
-//Configurar nunjucks (template engine npm install nunjucks)
-const nunjucks = require('nunjucks')
-nunjucks.configure('src/views', {
+
+const { pageLanding, pageStudy, pageGiveClasses, saveGiveClasses } = require('./pages');
+
+// Nunjucks config (Template engine)
+const nunjucks = require('nunjucks');
+nunjucks.configure('src/views/pages', {
     express: server,
-    noCache: true,
+    noCache: true
+});
 
-})
-
-
-//Início e configuração do server
 server
-//Receber os dados do req.body
-.use(express.urlencoded({extended: true}))
-//Configurar arquivos estáticos (imagens, css, scripts)
-server.use(express.static("public"))
-//Rotas da aplicação
-.get("/", pageLanding)
-.get("/study", pageStudy)
-.get("/give-classes", pageGiveClasses)
-.post("/save-classes", saveClasses)
-//start do servidor
-.listen(5500)
+    .use(express.static("public")) // Use static files from public source
+    .use(express.urlencoded({extended: true})) // Allowing the body use
+    // App routing
+    .get('/', pageLanding)
+    .get('/study', pageStudy)
+    .get('/give-classes', pageGiveClasses)
+    .post('/save-give-classes', saveGiveClasses)
+    // Server start
+    .listen(port);

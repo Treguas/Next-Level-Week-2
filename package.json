@@ -1,25 +1,23 @@
 {
-  "name": "Next-Level-Week-2",
+  "name": "NLW-2",
   "version": "1.0.0",
-  "description": "aprendizado\r Template Grid",
+  "description": "Next Level Week #2 - Rocketseat",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Treguas/Next-Level-Week-2.git"
+    "url": "git+https://github.com/Treguas/Next-Level-Week-2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Treguas/Next-Level-Week-2/issues"
+    "url": "https://github.com/Treguas/Next-Level-Week-2"
   },
-  "homepage": "https://github.com/Treguas/Next-Level-Week-2#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.2",
-    "sqlite-async": "^1.1.0"
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

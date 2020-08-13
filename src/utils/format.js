@@ -1,15 +1,15 @@
-//Dados
 const subjects = [
     "Artes",
     "Biologia",
     "Ciências",
     "Educação física",
+    "Filosofia",
     "Física",
     "Geografia",
     "História",
     "Matemática",
     "Português",
-    "Química",
+    "Química"
 ]
 
 const weekdays = [
@@ -19,26 +19,16 @@ const weekdays = [
     "Quarta-feira",
     "Quinta-feira",
     "Sexta-feira",
-    "Sábado",
+    "Sábado"
 ]
 
-//Funcionalidades
-
 function getSubject(subjectNumber) {
-    return subjects[subjectNumber - 1]
+    return subjects[+subjectNumber - 1]; // This + is the way to ensure that its a number
 }
 
 function convertHoursToMinutes(time) {
-    /*const hour = time.split(':')[0]
-    const minutes = time.split(':')[1]*/
-    const [hour, minutes] = time.split(':')
-
-    return Number((hour*60) + minutes) 
+    const [hour, minutes] = time.split(':'); // Using disruption instead of "const hour = time.split(:)[0]"
+    return Number((hour * 60) + minutes);
 }
 
-module.exports = {
-    subjects, 
-    weekdays,
-    getSubject,
-    convertHoursToMinutes
-}
+module.exports = { subjects, weekdays, getSubject, convertHoursToMinutes };
