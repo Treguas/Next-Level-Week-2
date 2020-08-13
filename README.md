@@ -87,7 +87,7 @@ Este projeto consiste em três partes:
 $ git clone https://github.com/Treguas/Next-Level-Week-2
 
 # Acesse a pasta do projeto no prompt de comando
-$ cd NLW-2
+$ cd Next-Level-Week-2
 
 # Instale as dependências
 $ npm install
